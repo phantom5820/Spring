@@ -1,0 +1,21 @@
+package main;
+
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
+
+import config.DBManager;
+import vo.EmployeeVO;
+
+public class TestMain {
+
+	public static void main(String[] args) {
+			System.out.println("Hello World");
+		String sql = "select eno, name, department, position from employee where position > ";
+		EmployeeVO vo = new EmployeeVO(eno, name, department, poistion);
+		PreparedStatement pstmt = null;
+		ResultSet rs = null;
+		
+		pstmt = DBManager.getInstance().getConn().prepareStatement(sql);
+	}
+
+}

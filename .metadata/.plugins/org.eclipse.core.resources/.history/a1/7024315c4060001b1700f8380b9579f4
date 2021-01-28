@@ -1,0 +1,10 @@
+package com.korea.Springdi;
+
+public class DIMain {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

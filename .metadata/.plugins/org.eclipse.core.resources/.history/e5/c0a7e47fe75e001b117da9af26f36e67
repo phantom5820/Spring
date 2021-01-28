@@ -1,0 +1,25 @@
+package test;
+
+import static org.junit.jupiter.api.Assertions.*;
+
+import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.Test;
+
+class EmployeeDTOTest {
+
+	@BeforeEach
+	void setUp() throws Exception {
+		System.out.println("테스트 작업전 수행");
+	}
+
+	@Test
+	void testSelectEmployeeList() {
+		fail("Not yet implemented");
+	}
+
+	@Test
+	void testSelectBottom5Salary() {
+		fail("Not yet implemented");
+	}
+
+}

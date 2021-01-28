@@ -1,0 +1,3 @@
+select * from EMPLOYEE;
+select * from EMPLOYEE_SALARY;
+select * from POSITION_LIST;

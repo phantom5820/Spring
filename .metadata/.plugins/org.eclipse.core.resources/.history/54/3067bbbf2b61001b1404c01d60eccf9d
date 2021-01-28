@@ -1,0 +1,30 @@
+package org.korea.mvc.service;
+
+import org.korea.mvc.dao.MemberDAO;
+import org.korea.mvc.di.DIContainer;
+import org.korea.mvc.dto.MemberDTO;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class MemberService {
+	
+	
+	@Autowired
+	MemberDAO dao;
+	
+	
+	
+	
+	public MemberService() {
+		dao = DIContainer.getContext().getBean("")
+	}
+
+
+
+
+	public MemberDTO login(String id, String pass) {
+		return dao.login(id, pass);
+	}
+	
+}

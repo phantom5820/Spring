@@ -1,0 +1,8 @@
+package org.korea.mvc.dao;
+
+import org.springframework.stereotype.Service;
+
+@Service
+public class EmployeeDAO {
+
+}

@@ -1,0 +1,9 @@
+package com.korea.Springdi;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration//스프링에서 환경설정할때 사용하는 어노테이션
+public class AppContext {
+
+	
+}

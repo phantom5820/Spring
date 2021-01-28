@@ -1,0 +1,19 @@
+package com.korea.Springdi;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration//스프링에서 환경설정할때 사용하는 어노테이션
+public class AppContext {
+	@Bean
+	public Greeting greeter() {
+		Greeting g = new Greeting(1000, "id=test");
+		return g;
+	}
+	
+	@Bean
+	public Person person() {
+		Person p = new Person("홍길동", 20);
+		return p;
+	}
+}

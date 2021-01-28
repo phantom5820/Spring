@@ -1,0 +1,9 @@
+package org.korea.mvc.dto;
+
+public class MemberDTO {
+
+	private String id;
+	private String pass;
+	private String name;
+	private int age;
+}

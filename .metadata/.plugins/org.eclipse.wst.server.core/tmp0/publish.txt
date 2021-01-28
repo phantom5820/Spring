@@ -1,0 +1,5 @@
+#Tomcat publish data
+#Thu Jan 28 10:20:02 KST 2021
+org.eclipse.jst.jee.server\:DIWebProject=C\:\\JAVA_ksj\\tomcat-8\\webapps\\DIWebProject
+org.eclipse.jst.jee.server\:EmployeeWeb=C\:\\JAVA_ksj\\tomcat-8\\webapps\\EmployeeWeb
+org.eclipse.jst.jee.server\:Product_Test=C\:\\JAVA_ksj\\tomcat-8\\webapps\\Product_Test

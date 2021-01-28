@@ -1,0 +1,36 @@
+package di;
+
+import org.springframework.context.annotation.AnnotationConfigApplicationContext;
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+import config.DBManager;
+import dao.EmployeeDAO;
+
+@Configuration
+public class DIContainer {
+	private static AnnotationConfigApplicationContext container = new AnnotationConfigApplicationContext( DIContainer());
+
+	
+	
+	public static DIContainer getContainer() {
+		if(container == null)
+			container = new DIContainer();
+		return container;
+	}
+	
+	@Bean
+	public DBManager manager() {
+		DBManager m = new DBManager();
+		return m;
+	}
+
+	@Bean
+	public EmployeeDAO employeeDao() {
+		EmployeeDAO dao = new EmployeeDAO();
+		dao.
+		return new EmployeeDAO();
+	}
+	
+	
+}

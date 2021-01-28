@@ -1,0 +1,17 @@
+package org.korea.mvc.dao;
+
+import org.korea.mvc.dto.EmployeeDTO;
+import org.springframework.stereotype.Service;
+
+import config.DBManager;
+
+@Service
+public class EmployeeDAO {
+	private DBManager manager;
+
+	public EmployeeDAO() {
+	}
+	
+	
+	
+}
