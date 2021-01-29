@@ -61,8 +61,8 @@ public class EmployeeDAO {
 			rs = pstmt.executeQuery();
 			ArrayList<EmployeeDTO> list = new ArrayList<EmployeeDTO>();
 			while(rs.next()) {
-				list.add(new EmployeeDTO(rs.getString(2), rs.getString(3), 
-						rs.getString(4), rs.getString(5), rs.getInt(6), rs.getInt(7)));
+				list.add(new EmployeeDTO(rs.getString(1), rs.getString(2), rs.getString(3), 
+						rs.getInt(4), rs.getInt(5), rs.getString(6)));
 			}
 			JSONArray array = new JSONArray(list);
 			result = array.toString();
@@ -84,8 +84,8 @@ public class EmployeeDAO {
 			pstmt.setString(1, eno);
 			rs = pstmt.executeQuery();
 			if(rs.next()) {
-				   dto = new EmployeeDTO(rs.getString(1), rs.getString(2), rs.getString(3),
-						   rs.getString(6), rs.getInt(5), rs.getInt(4));
+				   dto = new EmployeeDTO(rs.getString(1), rs.getString(2), rs.getString(3), 
+							rs.getInt(4), rs.getInt(5), rs.getString(6));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

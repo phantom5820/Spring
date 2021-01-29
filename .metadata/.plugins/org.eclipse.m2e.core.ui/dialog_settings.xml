@@ -70,12 +70,16 @@
 	</section>
 	<section name="wizardPage">
 		<list key="groupId">
+			<item value="Product_Test"/>
+			<item value="DIWebProject"/>
 			<item value="EmployeeWebPractice"/>
 			<item value="EmployeeWeb"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
+			<item value="Product_Test"/>
+			<item value="DIWebProject"/>
 			<item value="EmployeeWebPractice"/>
 			<item value="EmployeeWeb"/>
 		</list>
@@ -85,6 +89,10 @@
 	</section>
 	<section name="MavenProjectImportWizardPage">
 		<list key="rootDirectory">
+			<item value="C:\Users\phant\Desktop\IT국비과정 자료\국비강의 메모\국비강의 71일차 (스프링 마이바티스)\4교시\SpringProject-main\Maybatis_test"/>
+			<item value="C:\JAVA_ksj\workspace\spring\Maybatis_test"/>
+			<item value="C:\JAVA_ksj\workspace\spring\SpringMVC"/>
+			<item value="C:\Users\phant\Desktop\국비강의 70일차(Springmvc)\SpringMVC"/>
 			<item value="C:\JAVA_ksj\workspace\spring\Spring-DI"/>
 		</list>
 		<list key="projectNameTemplate">

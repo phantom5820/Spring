@@ -20,7 +20,7 @@ public class StudentDAO {
 		System.out.println("studentDAO 생성");
 	}
 	
-	public ArrayList<StudentDTO> selectAllStudent(){
+	public ArrayList<StudentDTO> selectStudentAllList(){
 		ArrayList<StudentDTO> list = new ArrayList<StudentDTO>();
 		String sql = "select * from student";
 		PreparedStatement pstmt = null;
@@ -30,7 +30,7 @@ public class StudentDAO {
 			pstmt = manager.getConnection().prepareStatement(sql);
 			rs = pstmt.executeQuery();
 			while(rs.next()) {
-				list.add(new StudentDTO(rs.getString(1), rs.getString(2), rs.getInt(3), rs.getInt(4)));
+				list.add(new StudentDTO(rs.getString(1), rs.getString(2), rs.getInt(3), rs.getDouble(4)));
 			}
 		} catch (SQLException e) {
 			e.printStackTrace();

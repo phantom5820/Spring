@@ -5,21 +5,21 @@ public class EmployeeDTO {
 	private String name;
 	private String department;
 	private int position;
-	private String positionName;
 	private int salary;
+	private String positionName;
 	
 	
 	
 
 
-	public EmployeeDTO(String eno, String name, String department, String positionName, int salary, int position) {
+	public EmployeeDTO(String eno, String name, String department, int position, int salary, String positionName) {
 		super();
 		this.eno = eno;
 		this.name = name;
 		this.department = department;
-		this.positionName = positionName;
-		this.salary = salary;
 		this.position = position;
+		this.salary = salary;
+		this.positionName = positionName;
 	}
 
 
