@@ -1,8 +1,6 @@
 package board.dto;
 
 import org.apache.ibatis.type.Alias;
-
-@Alias("member")
 public class MemberDTO {
 	private String id;
 	private String pass;
@@ -10,6 +8,15 @@ public class MemberDTO {
 	private int age;
 	private String grade;
 	
+	
+	
+	public MemberDTO(String id, String pass, String name, int age) {
+		super();
+		this.id = id;
+		this.pass = pass;
+		this.name = name;
+		this.age = age;
+	}
 	public MemberDTO(String id, String pass, String name, int age, String grade) {
 		super();
 		this.id = id;

@@ -3,9 +3,15 @@
 	<item key="J2EE_EXPORT_OVERWRITE" value="false"/>
 	<item key="J2EE_EXPORT_SOURCE" value="true"/>
 	<list key="MRU_RUNTIME_STORE">
+		<item value="Apache Tomcat v8.5"/>
 		<item value="NULL_RUNTIME"/>
 	</list>
 	<list key="J2EE_EXPORT_JST_WEB">
+		<item value="C:\Users\phant\Desktop\IT국비과정 자료\국비강의 메모\국비강의 74일차\시험(통합구현)\StudentTestProject.war"/>
+		<item value="C:\Users\phant\Desktop\IT국비과정 자료\국비강의 메모\국비강의 74일차\시험(통합구현)\StudentWebProject.war"/>
 		<item value="C:\Users\phant\Desktop\IT국비과정 자료\국비강의 메모\국비강의 69일차(스프링)\7교시8교시(시험)\인터페이스 시험\Product_Test.war"/>
+	</list>
+	<list key="J2EE_IMPORT_null">
+		<item value="C:\Users\phant\Desktop\IT국비과정 자료\국비강의 메모\국비강의 74일차\비대면 과제 (테스트케이스)\EmployeeTest_Part2.war"/>
 	</list>
 </section>

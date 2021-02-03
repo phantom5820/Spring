@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-    <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -29,12 +29,12 @@ p{
 	<jsp:include page="template/header.jsp"></jsp:include>
 	
 	<div class="container">
-	<c:if test="${sessionScope.login != null && ${sessionScope.login = true}">
-				${sessionScope.name} 님이 로그인 하셨습니다.<br>
-			<a href="logout.do">로그아웃</a> | <a href="member_update_view.jsp">정보수정</a>
+	<c:if test="${sessionScope.login != null && sessionScope.login == true}">
+			${sessionScope.name } 님이 로그인 하셨습니다.<br>
+		<a href="logout.jsp">로그아웃</a> | <a href="member_update_view.jsp">정보수정</a>
 	</c:if>
-	<c:if test="${sessionScope.login = null && ${sessionScope.login = false}">
-		
+	<c:if test="${sessionScope.login == null || sessionScope.login == false}">
+	
 		<form method="post" action="login.do">
 			<label for="id">아이디 : </label><input type="text" name="id" id="id"><br>
 			<label for="pass">암호 : </label><input type="password" name="pass" id="pass"><br> 

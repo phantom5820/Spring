@@ -2,7 +2,6 @@ package board.dto;
 
 import org.apache.ibatis.type.Alias;
 
-@Alias("board")
 public class BoardDTO {
 	private int bno;
 	private String title;
@@ -14,6 +13,15 @@ public class BoardDTO {
 	private int bHate;
 	private int cCount;
 	
+	
+	public BoardDTO(int bno, String title, String writer, String content) {
+		super();
+		this.bno = bno;
+		this.title = title;
+		this.writer = writer;
+		this.content = content;
+	}
+
 	public int getcCount() {
 		return cCount;
 	}

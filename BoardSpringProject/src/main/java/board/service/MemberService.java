@@ -1,6 +1,7 @@
 package board.service;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.springframework.stereotype.Service;
 
@@ -25,5 +26,51 @@ public class MemberService {
 		map.put("pass", pass);
 		return mapper.login(map);
 	}
+
+	public MemberDTO selectMember(String id) {
+		return mapper.selectMember(id);
+	}
+
+
+	public int updateMember(MemberDTO dto) {
+		return mapper.updateMember(dto);
+		
+	}
+
+
+	public List<MemberDTO> selectAllMember() {
+		return mapper.selectAllMember();
+	}
+
+
+	public List<MemberDTO> selectSearchMember(String kind, String search) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("kind", kind);
+		map.put("search", search);
+		return mapper.selectSearchMember(map);
+	}
+
+
+	public int updateMemberAdmin(MemberDTO dto) {
+		return mapper.updateMemberAdmin(dto);
+	}
+
+
+	public int deleteMemberAdmin(String id) {
+		return mapper.deleteMemberAdmin(id);
+	}
+
+
+	public int insertLog(String log_date, int code_number, String message) {
+		HashMap<String, Object> map = new HashMap<String, Object>();
+		map.put("log_date", log_date);
+		map.put("code_number", code_number);
+		map.put("message", message);
+		
+		return mapper.insertLog;
+	}
+
+
+	
 
 }

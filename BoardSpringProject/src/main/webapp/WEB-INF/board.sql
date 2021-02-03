@@ -28,7 +28,7 @@ create sequence bno_seq start with 1 NOMAXVALUE;
 --댓글 시퀸스
 create sequence cno_seq start with 1 NOMAXVALUE;
 
-
+select * from board_comment;
 --게시판 글목록
 select * from board;
 select sysdate from dual;
@@ -104,4 +104,12 @@ CREATE TABLE BOARD_FILE_LIST(
 alter table BOARD_FILE_LIST add constraint fk_File_bno foreign key(bno) references board(bno) on delete cascade;
 --기존에 외래키를 넣어놨다면 외래키가 있다면 (지우고 다시 만든다! 외래키는 수정이 안되기 때문이다)
 
+create table Memberlog(
+	log_date date not null,
+	code_number number not null,
+	message varchar2(300 byte) not null
+);
 
+select * from memberlog;
+
+insert into memberlog values(to_date('2021/02/01 14:44:15', 'yyyy/mm/dd hh24:mi:ss'), 1000, 'test error 메세지');
